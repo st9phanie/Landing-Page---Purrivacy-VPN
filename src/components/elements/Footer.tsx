@@ -1,17 +1,8 @@
 import { Container } from "../shared/Container";
 import { navItems } from "./Navbar";
 import { NavItem } from "../shared/NavItem";
-import { useThemeStore } from "../../store/ThemeStore";
 
 export const Footer = () => {
-    const { toggleTheme, theme } = useThemeStore()
-    let color = "#000000"
-    {
-        theme === "dark" ? (
-            color = "#ffffff"
-        ) :
-            color = "#000000"
-    }
 
     return (
         <footer className="relative pt-28 rounded-t-3xl bg-box-bg">
