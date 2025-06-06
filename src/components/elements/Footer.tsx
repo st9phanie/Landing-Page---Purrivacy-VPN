@@ -4,7 +4,7 @@ import { NavItem } from "../shared/NavItem";
 import { useThemeStore } from "../../store/ThemeStore";
 
 export const Footer = () => {
-    const { toggleTheme, theme } = useThemeStore()
+    const { theme } = useThemeStore()
     let color = "#000000"
     {
         theme === "dark" ? (
