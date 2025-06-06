@@ -3,7 +3,13 @@ import { navItems } from "./Navbar";
 import { NavItem } from "../shared/NavItem";
 
 export const Footer = () => {
-
+let color = "#000000"
+    {
+        theme === "dark" ? (
+            color = "#ffffff"
+        ) :
+            color = "#000000"
+    }
     return (
         <footer className="relative pt-28 rounded-t-3xl bg-box-bg">
             <Container className="pb-8">
